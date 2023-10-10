@@ -1,0 +1,13 @@
+/* .Espacamento_CaixaDePesquisa{
+    display: flex;
+    justify-content: center;
+} */
+
+ .configuracoes_navbar{
+    background-color: #097188;
+
+} 
+.redes{
+    width: 30%;
+    height: 30%;
+    }

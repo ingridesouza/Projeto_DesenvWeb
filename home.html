@@ -13,94 +13,125 @@
 </head>
 <body>
 
-    <header>
-        <div class="text-center configuracoes_logo">
-            <img src="images/Logo_Plataforma.png" alt="Logo_Plataforma" width="10%" height="10%">
-        </div>
+    <!-- CABEÇALHO -->
+  <header>
+    <div class="text-center configuracoes_logo">
+      <img src="images/Logo_Plataforma.png" alt="Logo_Plataforma" width="10%" height="10%">
+    </div>
+    <!-- BARRA DE NAVEGAÇÃO -->
         <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-between">
-          <!-- Logo -->
-          <a href="" class="navbar-brand fonte_navBar">Educação Sem Fronteiras | Escola Virtual</a>
+          <a href="home.html" class="navbar-brand fonte_navBar cor_nome">Educação Sem Fronteiras | Escola Virtual</a>
   
-          <!-- navegacao -->
           <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                  <a href="" class="nav-link">Inicío</a>
+                  <a href="#Inicío" class="nav-link">Inicío</a>
               </li>
               <li class="nav-item">
-                  <a href="" class="nav-link">Cursos</a>
+                  <a href="#QuemSomos" class="nav-link">Quem Somos</a>
               </li>
               <li class="nav-item">
-                  <a href="" class="nav-link">Quem Somos</a>
+                <a href="#PorqueEscolher" class="nav-link">Porque escolher nossos cursos?</a>
+            </li>
+              <li class="nav-item">
+                  <a href="#Cursos" class="nav-link">Cursos</a>
               </li>
           </ul>
       </nav>
         
     </header>
 
-    <section>
-
-      <div class="d-flex align-items-center mt-5 mr-4">
-        <img src="images/logo_plataforma_whiteFooter.png" alt="Logo_Plataforma" width="3%" height="3%">
-        <h6>Educação Sem Fronteiras</h6>
-      </div>
-
-      <div>
-        <h1 class="">Seja Bem-Vindo</h1>
-      </div>
-
-      <div>
-        <div class="d-flex align-items-center gap-3 ml-2">
-          <p>Na nossa plataforma de cursos on-line, oferecemos uma ampla gama de oportunidades de aprendizado para impulsionar sua carreira e ampliar seus conhecimentos. Queremos ajudar você a atingir seus objetivos, seja aprimorando suas habilidades existentes ou explorando novos campos.</p>
-
-          <img src="images/estudante.jpg" alt="">
-        </div>
-        
-        <button>MATRICULE-SE</button>
-      </div>
+    <main>
       
+      <!-- SECTION - SEJA BEM-VINDO -->
+      <section id="Inicío" class="mt-5 mb-5">
+        <div class="d-flex flex-column margem_section13">
+
+          <div class="d-flex align-items-center mt-5">
+            <img src="images/logo_plataforma_whiteFooter.png" alt="Logo_Plataforma" width="3%" height="3%">
+            <h6>Educação Sem Fronteiras</h6>
+          </div>
+
+            <h1>Seja Bem-Vindo</h1>
+        </div>
+          
+        <section class="d-flex align-items-center justify-content-center gap-3">
+          <div>
+            <div class="d-flex align-items-center">
+              <p>Na nossa plataforma de cursos on-line, oferecemos uma ampla <br> gama de oportunidades de aprendizado para impulsionar <br> sua carreira e ampliar seus conhecimentos. Queremos ajudar <br> você a atingir seus objetivos, seja aprimorando <br> suas habilidades existentes ou explorando novos campos.</p>
+            </div>
+            <a class="btn btn-primary mt-5" href="#Cursos" role="button">MATRICULE-SE</a>
+          </div>
+          <img class="mb-5" src="images/estudante.jpg" alt="estudante" width="50%">
+        </section>
+      </section>
+  
+      <!-- SECTION QUEM SOMOS -->
+
+      <section id="QuemSomos" class="d-flex flex-column justify-content-center align-items-center background_section24 mb-5  gap-4">
+        <h1 class="mt-5">Quem Somos</h1>
+        <p class="d-flex justify-content-center align-items-center text-center mb-5">Somos a Educação Sem Fronteiras, uma plataforma dedicada a expandir os horizontes do conhecimento <br> e da aprendizagem. Nossa missão é conectar pessoas de todo o mundo com oportunidades educacionais de alta qualidade, <br> independentemente de suas localizações geográficas. Acreditamos que o acesso à educação é fundamental para o crescimento pessoal <br> e profissional, e é por isso que oferecemos uma ampla variedade de cursos on-line ministrados por especialistas em suas áreas. <br> Nossa visão é criar um mundo onde a aprendizagem não conhece fronteiras, onde todos têm a chance de buscar seu potencial máximo. <br> Junte-se a nós nessa jornada de descoberta e aprendizado contínuo.</p>
+      </section>
+
+      <!-- SECTION PORQUE ESCOLHER OS NOSSOS CURSOS -->
+      <section id="PorqueEscolher" class="mt-5">
+        <div>
+          <h1 class="margem_section13 cor_nome">Porque escolher nossos cursos?</h1>
+        </div>
+
+          <div class="d-flex mt-5 margem_div_section3 gap-1">
+            <div>
+            <ul>
+              <li> Variedade de Cursos: Oferecemos uma vasta seleção de cursos, desde tecnologia e negócios até arte e saúde.
+              </li><br>
+              <li>
+                Instrutores Especializados: Nossos instrutores são profissionais experientes, prontos para compartilhar seus conhecimentos.
+              </li><br>
+              <li>
+                Flexibilidade de Aprendizado: Estude quando e onde for conveniente para você, com acesso 24 horas por dia, 7 dias por semana.
+              </li><br>
+            </ul>
+           </div>
+            
+            <div class="mb-5">
+              <ul>
+                <li>
+                  Comunidade de Aprendizado: Conecte-se com outros alunos, compartilhe experiências e expanda sua rede.
+                </li><br>
+                <li>
+                  Certificados Reconhecidos: Ganhe certificados de conclusão para comprovar suas novas habilidades.
+                </li><br>
+              </ul>
+            </div>
+          </div>
+            
+            
+      </section>
     </section>
 
-    <section class="d-flex justify-content-center mt-5 mb-5">
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/Educação sem Fronteiras.png" class="d-block" alt="Educação Sem Fronteiras" width="900px">
-          </div>
-          <div class="carousel-item">
-            <img src="images/NossosCursos.png" class="d-block" alt="NossosCursos" width="900px">
-          </div>
-          <div class="carousel-item">
-            <img src="images/AprendaMais.png" class="d-block" alt="AprendaMais" width="900px">
+      <!-- SECTION CARROSEL  -->
+      <section id="Cursos" class="d-flex flex-column background_section24">
+        <div>
+          <h1 class="mt-5 mb-5" style="margin-left: 2rem;">Nossos Cursos:</h1>
+        </div>
+        <div id="carouselExampleSlidesOnly" class="carousel slide mb-5 justify-content-center align-items-center" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="#" class="d-block" alt="Educação Sem Fronteiras">
+            </div>
+            <div class="carousel-item">
+              <img src="#" class="d-block" alt="NossosCursos">
+            </div> 
+            <div class="carousel-item">
+              <img src="#" class="d-block" alt="AprendaMais">
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- <section>
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="images/AprendaMais.png" alt="Primeiro Slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="images/Educação sem Fronteiras.png" alt="Segundo Slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="images/NossosCursos.png" alt="Terceiro Slide">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Próximo</span>
-        </a>
-      </div>
-    </section> -->
+      </section>
 
 
+    </main>
+
+    <!-- FOOTER -->
     <footer class="text-center text-lg-start bg-dark text-light p-4">
     
         <section>
@@ -143,7 +174,6 @@
                       </div>
               
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <!-- TITULO DA QUARTA COLUNA  -->
                 <h6 class="text-uppercase fw-bold mb-4">SIGA-NOS!</h6>
                 <!-- IMAGEM REFERENTE AS REDES SOCIAIS  -->
                 <p><img class="redes" src="images/RedesSociais.png" alt="RedesSociais"></p>
@@ -151,6 +181,7 @@
             </div>
         </div>
         </section>
+        <!-- LOGO DA PLATAFORMA -->
         <div class="text-center">
             <p><img src="images/logo_plataforma_whiteFooter.png" alt="Logo Logo_Plataforma" width="10%" height="10%"></p>
         </div>
@@ -160,6 +191,7 @@
     </footer>
 
     <script>
+      // FUNÇÃO EM JS PARA O CARROSEL FUNCIONAR
     const myCarouselElement = document.querySelector('#myCarousel')
         const carousel = new bootstrap.Carousel(myCarouselElement, {
           interval: 2000,

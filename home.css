@@ -1,0 +1,31 @@
+/* :root{
+    font-size: 62.5%;
+  }
+   */
+
+.cor_nome{
+    color: #90091d;
+}
+ .configuracoes_logo{
+    background-color: #097188;
+
+} 
+.redes{
+    width: 30%;
+    height: 30%;
+    }
+
+    .fonte_navBar{
+        font-family: 'Signika Negative', sans-serif;
+    }
+
+.margem_section13{
+    margin-left: 7.75vw;
+}
+.background_section24{
+    background-color: #097188;
+    color: white;
+}
+.margem_div_section3{
+    margin: 7.75vw;
+}

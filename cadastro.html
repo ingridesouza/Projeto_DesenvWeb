@@ -1,265 +1,270 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="home.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="cadastro.css">
 </head>
+
 <body>
     <header>
         <div class="text-center configuracoes_logo">
-          <img src="images/Logo_Plataforma.png" alt="Logo_Plataforma" width="150rem" height="150rem">
+            <img src="images/Logo_Plataforma.png" alt="Logo_Plataforma" width="150rem" height="150rem">
         </div>
         <!-- BARRA DE NAVEGAÇÃO -->
         <nav class="navbar navbar-expand-sm shadow-lg navbar-light bg-light justify-content-between">
-          <a href="home.html" class="navbar-brand fonte_navBar cor_nome">Educação Sem Fronteiras | Escola Virtual</a>
+            <a href="home.html" class="navbar-brand fonte_navBar cor_nome">Educação Sem Fronteiras | Escola Virtual</a>
         </nav>
-      </header>
+    </header>
 
-<main class="d-flex justify-content-center mb-5">
-    <div class="d-flex flex-column rounded shadow-lg p-5 mt-5 bg-light background mb-5">
-        <form class="-flex flex-column gap-5" action="processar_formulario.php" method="post" onsubmit="return validarFormulario()">
-            <h1 style="font-family: 'Signika Negative', sans-serif;" class="mt-3">Cadastro</h1>
-            <hr>
-            <div class="d-flex flex-column gap-2">
+    <main class="d-flex justify-content-center mb-5">
+        <div class="d-flex flex-column rounded shadow-lg p-5 mt-5 bg-light background mb-5">
+            <form class="-flex flex-column gap-5" action="processar_formulario.php" method="post"
+                onsubmit="return validarFormulario()">
+                <h1 style="font-family: 'Signika Negative', sans-serif;" class="mt-3">Cadastro</h1>
+                <hr>
+                <div class="d-flex flex-column gap-2">
 
-                <div>
-                    <label for="nome">Nome:</label><br>
-                    <input type="text" id="nome" name="nome" required><br>
+                    <div>
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" id="nome" name="nome" required><br>
+                    </div>
+
+                    <div>
+                        <label for="telefone">Telefone:</label><br>
+                        <input type="text" id="telefone" name="telefone"><br>
+                    </div>
+
+                    <div>
+                        <label for="data_nascimento">Data de Nascimento:</label><br>
+                        <input type="date" id="data_nascimento" name="data_nascimento" required><br>
+                    </div>
+
+                    <div>
+                        <label for="cep">CEP:</label><br>
+                        <input type="text" id="cep" name="cep" onblur="preencherEnderecoPorCEP()" required><br>
+                    </div>
+
+                    <div>
+                        <label for="estado">Estado:</label><br>
+                        <input type="text" id="estado" name="estado" required><br>
+                    </div>
+
+                    <div>
+                        <label for="cidade">Cidade:</label><br>
+                        <input type="text" id="cidade" name="cidade" required><br>
+                    </div>
+
+                    <div>
+                        <label for="bairro">Bairro:</label><br>
+                        <input type="text" id="bairro" name="bairro" required><br>
+                    </div>
+
+                    <div>
+                        <label for="cpf">CPF:</label><br>
+                        <input type="text" id="cpf" name="cpf" required><br>
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                    </div>
+
+                    <div>
+                        <label for="senha">Criar Senha:</label><br>
+                        <input type="password" id="senha" name="senha" required><br>
+                    </div>
+
+                    <div>
+                        <label for="confirmar_senha">Confirmar Senha:</label><br>
+                        <input type="password" id="confirmar_senha" name="confirmar_senha" required><br>
+                    </div>
+
+                    <div>
+                        <label for="area_interesse">Áreas de Interesse:</label><br>
+                        <select id="area_interesse" name="area_interesse" onchange="atualizarCursos()">
+                            <option value="Moda">Moda</option>
+                            <option value="Beleza">Beleza</option>
+                            <option value="Tecnologia">Tecnologia</option>
+                            <option value="Idioma">Idioma</option>
+                            <option value="Marketing">Marketing</option>
+                        </select><br>
+                    </div>
+
+                    <div>
+                        <label for="cursos">Cursos:</label><br>
+                        <select id="cursos" name="cursos">
+                        </select><br>
+                    </div>
+
                 </div>
-        
-                <div>
-                    <label for="telefone">Telefone:</label><br>
-                    <input type="text" id="telefone" name="telefone"><br>
+                <input class="btn mt-3 botaoPadrao" type="submit" value="Enviar">
+            </form>
+        </div>
+
+
+    </main>
+    <a class="btn mb-5 m-5 botaoPadraoVoltar" href="login.html">Voltar</a>
+
+    <!-- FOOTER -->
+    <footer class="text-center text-lg-start bg-dark text-light p-4">
+
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            EDUCAÇÃO SEM FRONTEIRAS
+                        </h6>
+                        <p>
+                            SEJA TUTOR
+                        </p>
+                        <p>
+                            EDUCAÇÃO SEM FRONTEIRAS BUSINESS
+                        </p>
+                        <p>
+                            INVESTIDORES
+                        </p>
+
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <p>
+                            BLOG
+                        </p>
+                        <p>
+                            QUEM SOMOS
+                        </p>
+                        <p>
+                            AJUDA E SUPORTE
+                        </p>
+
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <ul>
+                            <li>Política de Privacidade e Termos de Uso</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">SIGA-NOS!</h6>
+                        <!-- IMAGEM REFERENTE AS REDES SOCIAIS  -->
+                        <p><img class="redes" src="images/RedesSociais.png" alt="RedesSociais"></p>
+                    </div>
                 </div>
-        
-                <div>
-                    <label for="data_nascimento">Data de Nascimento:</label><br>
-                    <input type="date" id="data_nascimento" name="data_nascimento" required><br>
-                </div>
-        
-                <div>
-                    <label for="cep">CEP:</label><br>
-                    <input type="text" id="cep" name="cep" onblur="preencherEnderecoPorCEP()" required><br>
-                </div>
-    
-                <div>
-                    <label for="estado">Estado:</label><br>
-                    <input type="text" id="estado" name="estado" required><br>
-                </div>
-        
-                <div>
-                    <label for="cidade">Cidade:</label><br>
-                    <input type="text" id="cidade" name="cidade" required><br>
-                </div>
-        
-                <div>
-                    <label for="bairro">Bairro:</label><br>
-                    <input type="text" id="bairro" name="bairro" required><br>
-                </div>
-        
-                <div>
-                    <label for="cpf">CPF:</label><br>
-                    <input type="text" id="cpf" name="cpf" required><br>
-                </div>
-        
-                <div>
-                    <label for="email">E-mail:</label><br>
-                    <input type="email" id="email" name="email" required><br>
-                </div>
-        
-                <div>
-                    <label for="senha">Criar Senha:</label><br>
-                    <input type="password" id="senha" name="senha" required><br>
-                </div>
-        
-                <div>
-                    <label for="confirmar_senha">Confirmar Senha:</label><br>
-                    <input type="password" id="confirmar_senha" name="confirmar_senha" required><br>
-                </div>
-        
-                <div>
-                    <label for="area_interesse">Áreas de Interesse:</label><br>
-                    <select id="area_interesse" name="area_interesse" onchange="atualizarCursos()">
-                        <option value="Moda">Moda</option>
-                        <option value="Beleza">Beleza</option>
-                        <option value="Tecnologia">Tecnologia</option>
-                        <option value="Idioma">Idioma</option>
-                        <option value="Marketing">Marketing</option>
-                    </select><br>
-                </div>
-    
-                <div>
-                    <label for="cursos">Cursos:</label><br>
-                    <select id="cursos" name="cursos">
-                    </select><br>
-                </div>
-        
             </div>
-            <input class="btn mt-3 botaoPadrao" type="submit" value="Enviar">
-        </form>
-    </div>
-    
-   
-</main>
-<a class="btn mb-5 m-5 botaoPadraoVoltar" href="home_login.html">Voltar</a>
-
-<!-- FOOTER -->
-<footer class="text-center text-lg-start bg-dark text-light p-4">
-
-  <section>
-    <div class="container text-center text-md-start mt-5">
-      <div class="row mt-3">
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">
-            EDUCAÇÃO SEM FRONTEIRAS
-          </h6>
-          <p>
-            SEJA TUTOR
-          </p>
-          <p>
-            EDUCAÇÃO SEM FRONTEIRAS BUSINESS
-          </p>
-          <p>
-            INVESTIDORES
-          </p>
-
+        </section>
+        <!-- LOGO DA PLATAFORMA -->
+        <div class="text-center">
+            <p><img src="images/logo_plataforma_whiteFooter.png" alt="Logo Logo_Plataforma" width="150rem"
+                    height="150rem"></p>
         </div>
-
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <p>
-            BLOG
-          </p>
-          <p>
-            QUEM SOMOS
-          </p>
-          <p>
-            AJUDA E SUPORTE
-          </p>
-
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2023 Educação sem Fronteiras — Termos de uso • Politica de privacidade • Política de cookies • LGPD
         </div>
+    </footer>
 
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+    <script>
+        async function preencherEnderecoPorCEP() {
+            const cep = document.getElementById("cep").value;
+            if (cep.length === 8) {  // Verifica se o CEP tem 8 dígitos
+                const url = `https://viacep.com.br/ws/${cep}/json/`;
+                try {
+                    const response = await fetch(url);
+                    const data = await response.json();
 
-          <ul>
-            <li>Política de Privacidade e Termos de Uso</li>
-          </ul>
-        </div>
-
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <h6 class="text-uppercase fw-bold mb-4">SIGA-NOS!</h6>
-          <!-- IMAGEM REFERENTE AS REDES SOCIAIS  -->
-          <p><img class="redes" src="images/RedesSociais.png" alt="RedesSociais"></p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- LOGO DA PLATAFORMA -->
-  <div class="text-center">
-    <p><img src="images/logo_plataforma_whiteFooter.png" alt="Logo Logo_Plataforma" width="150rem" height="150rem"></p>
-  </div>
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2023 Educação sem Fronteiras — Termos de uso • Politica de privacidade • Política de cookies • LGPD
-  </div>
-</footer>
-
-<script>
-    async function preencherEnderecoPorCEP() {
-        const cep = document.getElementById("cep").value;
-        if (cep.length === 8) {  // Verifica se o CEP tem 8 dígitos
-            const url = `https://viacep.com.br/ws/${cep}/json/`;
-            try {
-                const response = await fetch(url);
-                const data = await response.json();
-
-                if (data.erro) {
-                    alert("CEP não encontrado.");
-                } else {
-                    document.getElementById("estado").value = data.uf;
-                    document.getElementById("cidade").value = data.localidade;
-                    document.getElementById("bairro").value = data.bairro;
+                    if (data.erro) {
+                        alert("CEP não encontrado.");
+                    } else {
+                        document.getElementById("estado").value = data.uf;
+                        document.getElementById("cidade").value = data.localidade;
+                        document.getElementById("bairro").value = data.bairro;
+                    }
+                } catch (error) {
+                    console.error('Ocorreu um erro ao buscar o CEP:', error);
                 }
-            } catch (error) {
-                console.error('Ocorreu um erro ao buscar o CEP:', error);
             }
         }
-    }
 
-    function validarSenha() {
-        const senha = document.getElementById("senha").value;
-        const confirmarSenha = document.getElementById("confirmar_senha").value;
+        function validarSenha() {
+            const senha = document.getElementById("senha").value;
+            const confirmarSenha = document.getElementById("confirmar_senha").value;
 
-        if (senha !== confirmarSenha) {
-            alert("A senha e a confirmação de senha devem ser iguais.");
-            return false;
-        }
-
-        return true;
-    }
-
-    function validarFormulario() {
-        const camposObrigatorios = ["nome", "data_nascimento", "cep", "estado", "cidade", "bairro", "cpf", "email", "senha", "confirmar_senha", "telefone"];
-
-        for (const campo of camposObrigatorios) {
-            const valorCampo = document.getElementById(campo).value;
-            if (valorCampo === "") {
-                alert(`O campo "${campo}" é obrigatório.`);
+            if (senha !== confirmarSenha) {
+                alert("A senha e a confirmação de senha devem ser iguais.");
                 return false;
             }
+
+            return true;
         }
 
-        return validarSenha();
-    }
+        function validarFormulario() {
+            const camposObrigatorios = ["nome", "data_nascimento", "cep", "estado", "cidade", "bairro", "cpf", "email", "senha", "confirmar_senha", "telefone"];
 
-    function atualizarCursos() {
-        const areaInteresse = document.getElementById("area_interesse");
-        const cursos = document.getElementById("cursos");
+            for (const campo of camposObrigatorios) {
+                const valorCampo = document.getElementById(campo).value;
+                if (valorCampo === "") {
+                    alert(`O campo "${campo}" é obrigatório.`);
+                    return false;
+                }
+            }
 
-        cursos.innerHTML = ""; // Limpa as opções atuais
+            return validarSenha();
+        }
 
-        if (areaInteresse.value === "Moda") {
-            const opcoesModa = ["Personal Style", "Fashion Design", "Design Têxtil e Estamparia", "Gestão de negócios de Moda"];
-            for (const opcao of opcoesModa) {
-                const option = document.createElement("option");
-                option.text = opcao;
-                cursos.add(option);
-            }
-        } else if (areaInteresse.value === "Beleza") {
-            const opcoesBeleza = ["Design de Sobrancelha", "Extensão de cílios", "Alongamento de unhas", "Drenagem Linfática"];
-            for (const opcao of opcoesBeleza) {
-                const option = document.createElement("option");
-                option.text = opcao;
-                cursos.add(option);
-            }
-        } else if (areaInteresse.value === "Tecnologia") {
-            const opcoesTecnologia = ["Programador Full Stack", "Segurança Cibernética", "Desenvolvedor Front End", "Desenvolvedor Back End"];
-            for (const opcao of opcoesTecnologia) {
-                const option = document.createElement("option");
-                option.text = opcao;
-                cursos.add(option);
-            }
-        } else if (areaInteresse.value === "Marketing") {
-            const opcoesMarketing = ["Mídias Sociais", "Gestor de Marketing de Performance", "Brand Manager", "Copywriter"];
-            for (const opcao of opcoesMarketing) {
-                const option = document.createElement("option");
-                option.text = opcao;
-                cursos.add(option);
-            }
-        } else if (areaInteresse.value === "Idioma") {
-            const opcoesIdioma = ["Inglês", "Espanhol", "Mandarim", "Francês"];
-            for (const opcao of opcoesIdioma) {
-                const option = document.createElement("option");
-                option.text = opcao;
-                cursos.add(option);
+        function atualizarCursos() {
+            const areaInteresse = document.getElementById("area_interesse");
+            const cursos = document.getElementById("cursos");
+
+            cursos.innerHTML = ""; // Limpa as opções atuais
+
+            if (areaInteresse.value === "Moda") {
+                const opcoesModa = ["Personal Style", "Fashion Design", "Design Têxtil e Estamparia", "Gestão de negócios de Moda"];
+                for (const opcao of opcoesModa) {
+                    const option = document.createElement("option");
+                    option.text = opcao;
+                    cursos.add(option);
+                }
+            } else if (areaInteresse.value === "Beleza") {
+                const opcoesBeleza = ["Design de Sobrancelha", "Extensão de cílios", "Alongamento de unhas", "Drenagem Linfática"];
+                for (const opcao of opcoesBeleza) {
+                    const option = document.createElement("option");
+                    option.text = opcao;
+                    cursos.add(option);
+                }
+            } else if (areaInteresse.value === "Tecnologia") {
+                const opcoesTecnologia = ["Programador Full Stack", "Segurança Cibernética", "Desenvolvedor Front End", "Desenvolvedor Back End"];
+                for (const opcao of opcoesTecnologia) {
+                    const option = document.createElement("option");
+                    option.text = opcao;
+                    cursos.add(option);
+                }
+            } else if (areaInteresse.value === "Marketing") {
+                const opcoesMarketing = ["Mídias Sociais", "Gestor de Marketing de Performance", "Brand Manager", "Copywriter"];
+                for (const opcao of opcoesMarketing) {
+                    const option = document.createElement("option");
+                    option.text = opcao;
+                    cursos.add(option);
+                }
+            } else if (areaInteresse.value === "Idioma") {
+                const opcoesIdioma = ["Inglês", "Espanhol", "Mandarim", "Francês"];
+                for (const opcao of opcoesIdioma) {
+                    const option = document.createElement("option");
+                    option.text = opcao;
+                    cursos.add(option);
+                }
             }
         }
-    }
-</script>
+    </script>
 </body>
+
 </html>

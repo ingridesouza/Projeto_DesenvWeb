@@ -50,3 +50,34 @@
     background-color: #097188;
     color: white;
 }
+
+
+/* section cards */
+
+.card {
+    transition: transform 0.3s ease-in-out;
+    width: 18rem;
+    border: solid 2px #e7e7e7;
+}
+
+.card:hover {
+    transform: scale(1.08);
+}
+
+.card-1 {
+    transition: transform 0.3s ease-in-out;
+    width: 18rem;
+    border: solid 2px #e7e7e7;
+}
+
+.card-1:hover {
+    transform: scale(1.08);
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.card img{
+    height: 12rem;
+}

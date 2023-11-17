@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,7 @@
 
   <!-- CABEÇALHO -->
   <header>
-    <div class="text-center configuracoes_logo">
+    <div class="text-center configuracoes_logo d-flex align-items-center justify-content-center">
       <img src="images/Logo_Plataforma.png" alt="Logo_Plataforma" width="150rem" height="150rem">
     </div>
     <!-- BARRA DE NAVEGAÇÃO -->
@@ -35,38 +36,125 @@
           <a href="#Cursos" class="nav-link">Cursos</a>
         </li>
       </ul>
+      <div><a href="login.html">
+          <h1 class="fonte_navBar cor_nome btn border-1">ENTRE</h1>
+        </a>
+        <a href="cadastro.html">
+          <h1 class="fonte_navBar cor_nome btn border-1">CADASTRE-SE</h1>
+        </a>
+      </div>
     </nav>
+
 
   </header>
 
   <main>
 
-    <!-- SECTION - SEJA BEM-VINDO -->
-    <!-- FAZER UMA CORREÇÃO DPS -->
-    <section id="Inicío" class="mt-5 mb-5">
-      <div class="d-flex flex-column m-5">
-        <h1 class="fonte_navBar cor_nome">Seja Bem-Vindo</h1>
-        <hr>
+    <section class="d-flex justify-content-center align-items-center text-center">
+      <p class="w-75 mt-5 mb-3 cor_nome fonte_navBar font-weight-bold ">Se você é um estudante ávido por aprender e
+        busca uma maneira flexível de aprimorar suas habilidades, esta plataforma é o seu bilhete de entrada para um
+        universo de oportunidades educacionais.</p>
+    </section>
+
+    <section id="QuemSomos" class="d-flex flex-column align-items-center mb-5 mt-5 gap-5">
+      <div class="d-flex justify-content-center align-items-center mt-5 gap-5">
+        <p class="d-flex justify-content-center align-items-center text-center mb-5 fonte_navBar mb-4 w-25">Somos a
+          Educação Sem Fronteiras,
+          uma plataforma dedicada a expandir os horizontes do conhecimento e da aprendizagem. Nossa missão é
+          conectar pessoas de todo o mundo com oportunidades educacionais de alta qualidade, independentemente de
+          suas localizações geográficas.
+        </p>
+        <div>
+          <img src="images/img-section.webp" alt="estudo" width="300rem" height="180rem">
+          <img src="images/img-section1.webp" alt="estudo" width="300rem" height="180rem">
+        </div>
       </div>
 
-      <section id="QuemSomos"
-        class="d-flex flex-column justify-content-center align-items-center mb-5">
-        <div class="d-flex gap- justify-content-center gap-5">
-          <p class="d-flex justify-content-center align-items-center text-center mb-5 w-75 fonte_navBar">Somos a Educação Sem Fronteiras,
-            uma plataforma dedicada a expandir <br> os horizontes do conhecimento e da aprendizagem. Nossa missão é
-            conectar pessoas de todo o mundo <br> com oportunidades educacionais de alta qualidade, independentemente de
-            suas localizações geográficas. <br> Acreditamos que o acesso à educação é fundamental para o crescimento pessoal
-            e profissional, e é <br> por isso que oferecemos uma ampla variedade de cursos on-line ministrados por
-            especialistas em suas áreas. <br> Nossa visão é criar um mundo onde a aprendizagem não conhece fronteiras,
-            onde <br> todos têm a chance de buscar seu potencial máximo. <br> Junte-se a nós nessa jornada de descoberta e
-            aprendizado contínuo.
-          </p>
-          <img class="mb-5 rounded shadow-lg" src="images/estudante.jpg" alt="estudante" width="350rem" height="200rem">
+
+      <div class="d-flex justify-content-center align-items-center mt-5 gap-5">
+        <div>
+          <img src="images/EAD.png" alt="estudo" width="300rem" height="180rem">
+          <img src="images/EAD-1.jpg" alt="estudo" width="300rem" height="180rem">
         </div>
-      </section>
-      
-      <!-- SECTION POR QUE ESCOLHER OS NOSSOS CURSOS -->
-      <section id="PorQueEscolher"
+        <p class="d-flex justify-content-center align-items-center text-center mb-5 fonte_navBar mb-4 w-25">Acreditamos
+          que o acesso à educação é fundamental para o crescimento pessoal
+          e profissional, e é por isso que oferecemos uma ampla variedade de cursos on-line ministrados por
+          especialistas em suas áreas. Nossa visão é criar um mundo onde a aprendizagem não conhece fronteiras,
+          onde todos têm a chance de buscar seu potencial máximo. Junte-se a nós nessa jornada de descoberta e
+          aprendizado contínuo.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="mt-5">
+          <h1 class=" d-flex justify-content-center fonte_navBar p-5">Cursos em Destaque</h1>
+        </div>
+
+        <div class="d-flex justify-content-center gap-5 mt-5">
+
+          <div class="card shadow-sm mb-5">
+            <img class="card-img-top" src="images/curso-front.jpg" alt="curso-front">
+            <div class="card-body">
+              <b>
+                <h5 class="card-title cor_nome fonte_navBar">Front-End</h5>
+              </b>
+            </div>
+            <b>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item cor_nome">Duração 180hrs</li>
+                <li class="list-group-item cor_nome">Conclusão em 60 dias</li>
+                <li class="list-group-item text-success">Gratuito</li>
+              </ul>
+            </b>
+            <div class="card-body">
+              <a href="#" class="btn background_section24">Matricule-se já</a>
+            </div>
+          </div>
+
+          <div class="card shadow-sm mb-5">
+            <img class="card-img-top" src="images/brand-manager.jpg" alt="brand-manager">
+            <div class="card-body">
+              <b>
+                <h5 class="card-title cor_nome fonte_navBar">Brand Manager</h5>
+              </b>
+            </div>
+            <b>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item cor_nome">Duração 180hrs</li>
+                <li class="list-group-item cor_nome">Conclusão em 60 dias</li>
+                <li class="list-group-item text-success">Gratuito</li>
+              </ul>
+            </b>
+            <div class="card-body">
+              <a href="#" class="btn background_section24">Matricule-se já</a>
+            </div>
+          </div>
+
+          <div class="card shadow-sm mb-5">
+            <img class="card-img-top" src="images/ingles.jpg" alt="ingles">
+            <div class="card-body">
+              <b>
+                <h5 class="card-title cor_nome fonte_navBar">Inglês</h5>
+              </b>
+            </div>
+            <b>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item cor_nome">Duração 540hrs</li>
+                <li class="list-group-item cor_nome">Conclusão em 180 dias</li>
+                <li class="list-group-item text-success">Gratuito</li>
+              </ul>
+            </b>
+            <div class="card-body">
+              <a href="#" class="btn background_section24">Matricule-se já</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION POR QUE ESCOLHER OS NOSSOS CURSOS -->
+    <section id="PorQueEscolher"
       class="d-flex flex-column justify-content-center align-items-center mb-5 background_section24 shadow-lg gap-4">
       <h1 class="mt-5">Por que escolher nossos cursos?</h1>
       <div class="d-flex mt-5 margem_div_section3 gap-1 fonte_navBar">
@@ -88,7 +176,7 @@
             <br>
           </ul>
         </div>
-  
+
         <div class="mb-5">
           <ul>
             <li>
@@ -106,77 +194,317 @@
       </div>
     </section>
 
-      <section id="Cursos" class="d-flex flex-column justify-content-center align-content-center mb-5">
-        <h1 class="d-flex mt-5 mb-5 justify-content-center fonte_navBar">Cursos disponiveis na plataforma:</h1>
-      <div class="d-flex flex-column justify-content-center align-content-center mb-5">
-        <h1 class="d-flex mt-5 mb-5 justify-content-center fonte_navBar">Tecnologia</h1>
-        <div class="d-flex justify-content-center align-content-center gap-3">
-          <a href="#"><img class="shadow-lg rounded" src="images/imgs_courses/back end.png" alt="Curso de Back-End" width="80%" height="100%"></a>
-          <a href="#"><img class="shadow-lg rounded" src="images/imgs_courses/front end.png" alt="Curso de Front-End" width="80%" height="100%"></a>
-          <a href="#"><img class="shadow-lg rounded" src="images/imgs_courses/programador.png" alt="Curso de Programador" width="80%" height="100%"></a>
-          <a href="#"><img class="shadow-lg rounded" src="images/imgs_courses/segurança.png" alt="Curso de Segurança" width="80%" height="100%"></a>
+    <section id="Cursos" class="d-flex flex-wrap justify-content-center align-content-center mb-5">
+      <h1 class="d-flex justify-content-center fonte_navBar">Cursos disponiveis na plataforma:</h1>
+
+      <div class="d-flex justify-content-center gap-5 mt-5">
+
+        <div class="card shadow-sm">
+          <img class="card-img-top" src="images/curso-front.jpg" alt="curso-front">
+          <div class="card-body">
+            <b>
+              <h5 class="card-title cor_nome fonte_navBar">Front-End</h5>
+            </b>
+          </div>
+          <b>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Duração 180hrs</li>
+              <li class="list-group-item">Conclusão em 60 dias</li>
+              <li class="list-group-item text-success">Gratuito</li>
+            </ul>
+          </b>
+          <div class="card-body">
+            <a href="#" class="btn background_section24">Matricule-se já</a>
+          </div>
+        </div>
+
+        <div class="card shadow-sm">
+          <img class="card-img-top" src="images/curso-back-end.jpg" alt="curso-back-end">
+          <div class="card-body">
+            <b>
+              <h5 class="card-title cor_nome fonte_navBar">Back-End</h5>
+            </b>
+          </div>
+          <b>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Duração 180hrs</li>
+              <li class="list-group-item">Conclusão em 60 dias</li>
+              <li class="list-group-item text-success">Gratuito</li>
+            </ul>
+          </b>
+          <div class="card-body">
+            <a href="#" class="btn background_section24">Matricule-se já</a>
+          </div>
+        </div>
+
+        <div class="card shadow-sm">
+          <img class="card-img-top" src="images/programadir-full-stack.jpeg" alt="programadir-full-stack">
+          <div class="card-body">
+            <b>
+              <h5 class="card-title cor_nome fonte_navBar">Programador Full Stack</h5>
+            </b>
+          </div>
+          <b>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Duração 360hrs</li>
+              <li class="list-group-item">Conclusão em 120 dias</li>
+              <li class="list-group-item text-success">Gratuito</li>
+            </ul>
+          </b>
+          <div class="card-body">
+            <a href="#" class="btn background_section24">Matricule-se já</a>
+          </div>
         </div>
       </div>
 
-      <div>
-        <h1 class="d-flex mt-5 mb-5 justify-content-center fonte_navBar">Marketing</h1>
-        <div class="d-flex justify-content-center align-content-center gap-3 ">
-          <a href="#"><img class="shadow-lg rounded" src="images/imgs_courses/gestor de marketing.png" alt="Curso de Gestão de Marketing" width="80%" height="100%"></a>
-          <a href="#"><img class="shadow-lg rounded" src="images/imgs_courses/copywriter.png" alt="Copywriter" width="80%" height="100%"></a>
-          <a href="#"><img class="shadow-lg rounded" src="images/imgs_courses/brand manager.png" alt="Brand Manager" width="80%" height="100%"></a>
-          <a href="#"><img class="shadow-lg rounded" src="images/imgs_courses/midias sociais.png" alt="Mídias Sociais" width="80%" height="100%"></a>
+      </div>
+
+
+      <div class="d-flex justify-content-center gap-5 mt-5">
+
+        <div class="card shadow-sm">
+          <img class="card-img-top" src="images/design de unhas.jpg" alt="design-de-unhas">
+          <div class="card-body">
+            <b>
+              <h5 class="card-title cor_nome fonte_navBar">Design de Unhas</h5>
+            </b>
+          </div>
+          <b>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Duração 12hrs</li>
+              <li class="list-group-item">Conclusão em 3 dias</li>
+              <li class="list-group-item text-success">Gratuito</li>
+            </ul>
+          </b>
+          <div class="card-body">
+            <a href="#" class="btn background_section24">Matricule-se já</a>
+          </div>
+        </div>
+
+        <div class="card shadow-sm">
+          <img class="card-img-top" src="images/Design-de-Sobrancelhass.jpg" alt="Design-de-Sobrancelhass">
+          <div class="card-body">
+            <b>
+              <h5 class="card-title cor_nome fonte_navBar">Design de Sobrancelhas</h5>
+            </b>
+          </div>
+          <b>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Duração 180hrs</li>
+              <li class="list-group-item">Conclusão em 60 dias</li>
+              <li class="list-group-item text-success">Gratuito</li>
+            </ul>
+          </b>
+          <div class="card-body">
+            <a href="#" class="btn background_section24">Matricule-se já</a>
+          </div>
+        </div>
+
+        <div class="card shadow-sm">
+          <img class="card-img-top" src="images/design e sobrancelhas.jpg" alt="design-de-cilios">
+          <div class="card-body">
+            <b>
+              <h5 class="card-title cor_nome fonte_navBar">Design de Cilios</h5>
+            </b>
+          </div>
+          <b>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Duração 360hrs</li>
+              <li class="list-group-item">Conclusão em 120 dias</li>
+              <li class="list-group-item text-success">Gratuito</li>
+            </ul>
+          </b>
+          <div class="card-body">
+            <a href="#" class="btn background_section24">Matricule-se já</a>
+          </div>
         </div>
       </div>
 
-      <div>
-        <h1 class="d-flex mt-5 mb-5 justify-content-center fonte_navBar">Moda</h1>
-        <div class="d-flex justify-content-center gap-3 ">
-          <a href="#"><img class="shadow-lg rounded" src="images/imgs_courses/design textil.png" alt="Curso de Design Textil" width="80%" height="100%"></a>
-          <a href="#"><img class="shadow-lg rounded" src="images/imgs_courses/fashion design.png" alt="Fashion Design" width="80%" height="100%"></a>
-          <a href="#"><img class="shadow-lg rounded" src="images/imgs_courses/personal style.png" alt="Personal Design" width="80%" height="100%"></a>
-          <a href="#"><img class="shadow-lg rounded" src="images/imgs_courses/gestão.png" alt="Gestão" width="80%" height="100%"></a>
+      <div class="d-flex justify-content-center gap-5 mt-5">
+
+        <div class="card shadow-sm">
+          <img class="card-img-top" src="images/espanhol.jpg" alt="espanhol">
+          <div class="card-body">
+            <b>
+              <h5 class="card-title cor_nome fonte_navBar">Espanhol</h5>
+            </b>
+          </div>
+          <b>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Duração 540hrs</li>
+              <li class="list-group-item">Conclusão em 180 dias</li>
+              <li class="list-group-item text-success">Gratuito</li>
+            </ul>
+          </b>
+          <div class="card-body">
+            <a href="#" class="btn background_section24">Matricule-se já</a>
+          </div>
+        </div>
+
+        <div class="card shadow-sm">
+          <img class="card-img-top" src="images/frances.jpg" alt="frances">
+          <div class="card-body">
+            <b>
+              <h5 class="card-title cor_nome fonte_navBar">Francês</h5>
+            </b>
+          </div>
+          <b>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Duração 540hrs</li>
+              <li class="list-group-item">Conclusão em 180 dias</li>
+              <li class="list-group-item text-success">Gratuito</li>
+            </ul>
+          </b>
+          <div class="card-body">
+            <a href="#" class="btn background_section24">Matricule-se já</a>
+          </div>
+        </div>
+
+        <div class="card shadow-sm">
+          <img class="card-img-top" src="images/ingles.jpg" alt="ingles">
+          <div class="card-body">
+            <b>
+              <h5 class="card-title cor_nome fonte_navBar">Inglês</h5>
+            </b>
+          </div>
+          <b>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Duração 540hrs</li>
+              <li class="list-group-item">Conclusão em 180 dias</li>
+              <li class="list-group-item text-success">Gratuito</li>
+            </ul>
+          </b>
+          <div class="card-body">
+            <a href="#" class="btn background_section24">Matricule-se já</a>
+          </div>
         </div>
       </div>
 
-      <div>
-        <h1 class="d-flex mt-5 mb-5 justify-content-center fonte_navBar">Beleza</h1>
-        <div class="d-flex justify-content-center gap-3 ">
-          <a href="#"><img class="shadow-lg rounded" src="images/imgs_courses/cílios.png" alt="Curso de Extensão de cílios" width="80%" height="100%"></a>
-          <a href="#"><img class="shadow-lg rounded" src="images/imgs_courses/drenagem.png" alt="Curso de Drenagem Linfática" width="80%" height="100%"></a>
-          <a href="#"><img class="shadow-lg rounded" src="images/imgs_courses/sobrancelhas.png" alt="Curso de Design de Sobrancelha" width="80%" height="100%"></a>
-          <a href="#"><img class="shadow-lg rounded" src="images/imgs_courses/unhas.png" alt="Curso de Unhas" width="80%" height="100%"></a>
+
+      <div class="d-flex justify-content-center gap-5 mt-5">
+
+        <div class="card shadow-sm">
+          <img class="card-img-top" src="images/gestor-de-marketing.jpg" alt="gestor-de-marketing">
+          <div class="card-body">
+            <b>
+              <h5 class="card-title cor_nome fonte_navBar">Gestão de Marketing</h5>
+            </b>
+          </div>
+          <b>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Duração 180hrs</li>
+              <li class="list-group-item">Conclusão em 60 dias</li>
+              <li class="list-group-item text-success">Gratuito</li>
+            </ul>
+          </b>
+          <div class="card-body">
+            <a href="#" class="btn background_section24">Matricule-se já</a>
+          </div>
+        </div>
+
+        <div class="card shadow-sm">
+          <img class="card-img-top" src="images/copywiter.jpg" alt="Copywiter">
+          <div class="card-body">
+            <b>
+              <h5 class="card-title cor_nome fonte_navBar">Copywiter</h5>
+            </b>
+          </div>
+          <b>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Duração 180hrs</li>
+              <li class="list-group-item">Conclusão em 60 dias</li>
+              <li class="list-group-item text-success">Gratuito</li>
+            </ul>
+          </b>
+          <div class="card-body">
+            <a href="#" class="btn background_section24">Matricule-se já</a>
+          </div>
+        </div>
+
+        <div class="card shadow-sm">
+          <img class="card-img-top" src="images/brand-manager.jpg" alt="brand-manager">
+          <div class="card-body">
+            <b>
+              <h5 class="card-title cor_nome fonte_navBar">Brand Manager</h5>
+            </b>
+          </div>
+          <b>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Duração 180hrs</li>
+              <li class="list-group-item">Conclusão em 60 dias</li>
+              <li class="list-group-item text-success">Gratuito</li>
+            </ul>
+          </b>
+          <div class="card-body">
+            <a href="#" class="btn background_section24">Matricule-se já</a>
+          </div>
         </div>
       </div>
 
-      <div class="mb-5">
-        <h1 class="d-flex mt-5 mb-5 justify-content-center fonte_navBar">Idiomas</h1>
-        <div class="d-flex justify-content-center gap-3 ">
-          <a href="#"><img class="shadow-lg rounded" src="images/imgs_courses/espanho.png" alt="Curso de Espanhol" width="80%" height="100%"></a>
-          <a href="#"><img class="shadow-lg rounded" src="images/imgs_courses/ingles.png" alt="Curso de Inglês" width="80%" height="100%"></a>
-          <a href="#"><img class="shadow-lg rounded" src="images/imgs_courses/francês.png" alt="Curso de Francês" width="80%" height="100%"></a>
-          <a href="#"><img class="shadow-lg rounded mb-5" src="images/imgs_courses/mandarim.png" alt="Curso de Mandarim" width="80%" height="100%"></a>
+      <div class="d-flex justify-content-center gap-5 mt-5">
+
+        <div class="card shadow-sm">
+          <img class="card-img-top" src="images/Gestão Estratégica em Negócios da Moda.jpg"
+            alt=" Gestão Estratégica em Negócios da Moda">
+          <div class="card-body">
+            <b>
+              <h5 class="card-title cor_nome fonte_navBar"> Gestão Estratégica em Negócios da Moda</h5>
+            </b>
+          </div>
+          <b>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Duração 36hrs</li>
+              <li class="list-group-item">Conclusão em 12 dias</li>
+              <li class="list-group-item text-success">Gratuito</li>
+            </ul>
+          </b>
+          <div class="card-body">
+            <a href="#" class="btn background_section24">Matricule-se já</a>
+          </div>
         </div>
+
+        <div class="card  shadow-sm">
+          <img class="card-img-top" src="images/fashion-design.jpg" alt="fashion-design">
+          <div class="card-body">
+            <b>
+              <h5 class="card-title cor_nome fonte_navBar">Fashion Design</h5>
+            </b>
+          </div>
+          <b>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Duração 36hrs</li>
+              <li class="list-group-item">Conclusão em 12 dias</li>
+              <li class="list-group-item text-success">Gratuito</li>
+            </ul>
+          </b>
+          <div class="card-body">
+            <a href="#" class="btn background_section24">Matricule-se já</a>
+          </div>
+        </div>
+
+        <div class="card shadow-sm">
+          <img class="card-img-top" src="images/estamparia.png" alt="estamparia">
+          <div class="card-body">
+            <b>
+              <h5 class="card-title cor_nome fonte_navBar">Design Textil e Estamparia</h5>
+            </b>
+          </div>
+          <b>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Duração 36hrs</li>
+              <li class="list-group-item">Conclusão em 12 dias</li>
+              <li class="list-group-item text-success">Gratuito</li>
+            </ul>
+          </b>
+          <div class="card-body">
+            <a href="#" class="btn background_section24">Matricule-se já</a>
+          </div>
+        </div>
+      </div>
+
       </div>
     </section>
-<!-- 
-      <section class="d-flex flex-column align-items-center justify-content-center gap-3">
-        <div class="d-flex gap-5 w-75">
-          <div class="d-flex align-items-center">
-            <p class="text-center fonte_navBar">Na nossa plataforma de cursos on-line, oferecemos uma ampla gama de oportunidades de
-              aprendizado para impulsionar sua carreira e ampliar seus conhecimentos. Queremos ajudar você a atingir seus objetivos, seja aprimorando suas habilidades existentes ou
-              explorando novos campos.
-            </p>
-          </div>
-          <img class="mb-5 rounded shadow-lg" src="images/estudante.jpg" alt="estudante" width="300rem" height="200rem">
-        </div>
-        <a class="btn btn-primary mt-5 shadow-lg" href="#Cursos" role="button">MATRICULE-SE</a>
-      </section>
-    </section> -->
-    <!-- SECTION QUEM SOMOS -->
 
-   
-
-    
   </main>
 
   <!-- FOOTER -->
@@ -231,24 +559,20 @@
     </section>
     <!-- LOGO DA PLATAFORMA -->
     <div class="text-center">
-      <p><img src="images/logo_plataforma_whiteFooter.png" alt="Logo Logo_Plataforma" width="150rem" height="150rem"></p>
+      <p><img src="images/logo_plataforma_whiteFooter.png" alt="Logo Logo_Plataforma" width="150rem" height="150rem">
+      </p>
     </div>
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2023 Educação sem Fronteiras — Termos de uso • Politica de privacidade • Política de cookies • LGPD
     </div>
   </footer>
 
-  <script>
-    // FUNÇÃO EM JS PARA O CARROSEL FUNCIONAR
-    const myCarouselElement = document.querySelector('#myCarousel')
-    const carousel = new bootstrap.Carousel(myCarouselElement, {
-      interval: 2000,
-      touch: false
-    })
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

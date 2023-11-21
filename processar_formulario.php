@@ -1,24 +1,23 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<header>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <litle>FORMULARIO</title>
-</head>
-<body>
 <?php
-$conexao = mysqli_connect("localhost","root","","cadastro");
-if(!$conexao){
-echo"NÃO CONECTADO";
+// Configurações do banco de dados
+$host = "localhost";
+$usuario = "root";
+$senha = "";
+$banco = "cadastro";
+
+// Conexão com o banco de dados
+$conn = new mysqli($host, $usuario, $senha, $banco);
+
+// Verifica a conexão
+if ($conn->connect_error) {
+    die("Conexão falhou: " . $conn->connect_error);
 }
-echo"CONECTADO AO BANCO>>>>>>>";
 
 //recuperar e verificar se ja existe
 $cpf = $_POST['cpf'];
-$cpf = mysqli_real_escape_string($conexao, $cpf);
+$cpf = mysqli_real_escape_string($conn, $cpf);
 $sql ="SELECT cpf FROM cadastro.pessoas WHERE cpf='$cpf'";
-$retorno = mysqli_query($conexao,$sql);
+$retorno = mysqli_query($conn,$sql);
 
 if(mysqli_num_rows($retorno)>0){
     echo"CPF JÁ CADASTRADO";
@@ -40,11 +39,18 @@ $cursos = $_POST['cursos'];
 
 $sql = "INSERT INTO cadastro.pessoas(cpf,nome,telefone,data_nascimento,cep,estado,cidade,bairro,email,senha,confirmar_senha,area_interesse,cursos) 
 values ('$cpf','$nome','$telefone','$data_nascimento','$cep','$estado','$cidade','$bairro','$email','$senha','$confirmar_senha','$area_interesse','$cursos')";
-$resultado = mysqli_query($conexao, $sql);
-echo">>USUÁRIO CADASTRADO COM SUCESSO!<BR>";
+$resultado = mysqli_query($conn, $sql);
+echo"USUÁRIO CADASTRADO COM SUCESSO!<BR>";
 
 }
 
 ?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="1;url=login.html">
+    <title>Redirecionando...</title>
+</head>
 </body>
 </html>
